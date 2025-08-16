@@ -21,6 +21,7 @@ rootProject.allprojects {
     repositories {
         google()
         mavenCentral()
+        maven { url 'https://jitpack.io' }
     }
 }
 
@@ -50,5 +51,5 @@ dependencies {
     /**
      * `SimpleStorage` library
      */
-    implementation "com.anggrayudi:storage:1.9.2"
+    implementation "com.github.anggrayudi:SimpleStorage:1.9.2"
 }
