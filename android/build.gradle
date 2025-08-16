@@ -25,6 +25,8 @@ rootProject.allprojects {
 }
 
 android {
+    namespace 'io.alexrintt.plugins.sharedstorage'
+
     compileSdkVersion 36
 
     sourceSets {
