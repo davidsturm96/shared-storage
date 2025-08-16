@@ -1,7 +1,6 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-
 import 'package:shared_storage/shared_storage.dart';
 
 import '../../theme/spacing.dart';
@@ -176,7 +175,7 @@ class _FileExplorerPageState extends State<FileExplorerPage> {
             _buildDocumentList()
           else
             _buildEmptyFolderWarning(),
-        ]
+        ],
       ],
     );
   }

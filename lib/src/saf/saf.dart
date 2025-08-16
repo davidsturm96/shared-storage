@@ -545,7 +545,7 @@ Future<DocumentFile?> parentFile(Uri uri) async =>
 Future<DocumentFile?> copy(Uri uri, Uri destination) async {
   final Map<String, String> args = <String, String>{
     'uri': '$uri',
-    'destination': '$destination'
+    'destination': '$destination',
   };
 
   return invokeMapMethod('copy', args);
