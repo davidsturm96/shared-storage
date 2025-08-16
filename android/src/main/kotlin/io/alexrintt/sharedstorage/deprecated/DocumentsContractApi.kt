@@ -101,7 +101,7 @@ internal class DocumentsContractApi(private val plugin: SharedStoragePlugin) :
               val apkIcon: Drawable? =
                 packageInfo.applicationInfo?.loadIcon(packageManager)
 
-              val bitmap: Bitmap = drawableToBitmap(apkIcon)
+              val bitmap: Bitmap = drawableToBitmap(apkIcon ?: return@createTempUriFile result.success(null))
 
               val bytes: ByteArray = bitmap.convertToByteArray()
 
